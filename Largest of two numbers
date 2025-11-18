@@ -1,4 +1,0 @@
-if(a > b)
-    printf("A is larger");
-else
-    printf("B is larger");
