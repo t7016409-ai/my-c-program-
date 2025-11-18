@@ -1,0 +1,4 @@
+if(marks >= 40)
+    printf("Pass");
+else
+    printf("Fail");
