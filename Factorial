@@ -1,0 +1,22 @@
+#include<stdio.h>
+
+long long fact = 1;   
+
+void factorial(int n) {
+    if (n > 1) {
+        fact = fact * n;
+        factorial(n - 1);   
+    }
+}
+
+int main() {
+    int n;
+
+    printf("ENTER A NUMBER: ");
+    scanf("%d", &n);
+    factorial(n);   
+
+    printf("THE FACTORIAL IS %lld\n", fact);
+
+    return 0;
+}
