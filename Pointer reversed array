@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    int arr[5] = {1, 2, 3, 4, 5};
+    int *start = arr;            
+    int *end = arr + 4;          
+    int temp;
+
+    // reverse using pointers
+    while (start < end) {
+        temp = *start;
+        *start = *end;
+        *end = temp;
+
+        start++;
+        end--;
+    }
+
+    // print reversed array
+    printf("Reversed array: ");
+    for (int i = 0; i < 5; i++) {
+        printf("%d ", arr[i]);
+    }
+
+    return 0;
+}
