@@ -1,0 +1,15 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+enum week {
+    sunday,
+    monday,
+    tuesday,
+    wednesday,
+    thursday,
+    friday,
+    saturday,
+};
+int main(){
+enum week today=saturday;
+printf("today is day number:%d\n", today);
+}
