@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    float angle, rad, sinx;
+
+    printf("Enter angle in degrees: ");
+    scanf("%f", &angle);
+
+    rad = angle * 3.1416 / 180;
+
+    sinx = rad - (rad*rad*rad)/6 + (rad*rad*rad*rad*rad)/120;
+
+    printf("Rotation value (approx) = %.4f", sinx);
+
+    return 0;
+}
