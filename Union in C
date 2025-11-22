@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main() {
+    union tanu{
+        int age ;
+        float marks;
+    };
+    union tanu t;
+    t.age=19;
+    printf("%d\n", t.age);
+    t. marks=10.4;
+    printf("%f\n", t.marks);
+    return 0;
+}
